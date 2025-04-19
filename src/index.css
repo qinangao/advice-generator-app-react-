@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+:root {
+  --Blue-200: hsl(193, 38%, 86%);
+  --Green-300: hsl(150, 100%, 66%);
+  --Blue-600: hsl(217, 19%, 38%);
+  --Blue-900: hsl(217, 19%, 24%);
+  --Blue-950: hsl(218, 23%, 16%);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+#root {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--Blue-950);
+  color: var(--Blue-200);
+}
+.app {
+  background-color: var(--Blue-900);
+  border-radius: 20px;
+  height: 270px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+}
+.title {
+  color: var(--Green-300);
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+.advice {
+  font-size: 26px;
+  text-align: center;
+}
+.dice-btn {
+  background-color: var(--Green-300);
+  border: none;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.dice-btn:hover {
+  -webkit-box-shadow: 0px 0px 25px 3px var(--Green-300);
+  -moz-box-shadow: 0px 0px 25px 3px var(--Green-300);
+  box-shadow: 0px 0px 25px 3px var(--Green-300);
+}
+.dice-btn > img {
+  width: 25px;
+}
